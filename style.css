@@ -1,0 +1,555 @@
+@font-face {
+    font-family: myFont;
+    src: url(EBGaramond-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(EBGaramond-VariableFont_wght.ttf);
+
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header {
+    width: 100%;
+    background-image: url('images/header_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+
+.head_background {
+    width: 99%;
+    height: 350;
+    position: absolute;
+    z-index: 1;
+}
+
+.engFlag {
+    margin: 25px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+}
+
+.turFlag {
+    margin-top: 25px;
+    margin-left: 98px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+}
+
+.vSep {
+    margin-top: 25px;
+    margin-left: 90px;
+    border-left: 3px solid rgb(0, 95, 0);
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+}
+
+.nameHeader {
+    margin-top: 150px;
+    margin-left: 400px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+}
+
+.nameTitle {
+    margin-top: 230px;
+    margin-left: 580px;
+    font-weight: bold;
+    color: rgba(255, 161, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+.head_rightside {
+    float: right;
+    margin: 30px;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+.profilPhoto {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-top: 290px;
+    margin-left: 800px;
+}
+
+.secondDiv {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.navDiv {
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 170px;
+
+}
+
+.navigationDiv {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    width: 160px;
+    height: 170px;
+    background-color: #f1f1f1;
+    border: 3px solid rgba(12, 141, 111, 255);
+    border-radius: 20px;
+}
+
+.navMenu1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 8px;
+    width: 40px;
+    height: 100%;
+}
+
+.navigationDiv img {
+    margin-bottom: 3px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+}
+
+.navMenu2 {
+    margin-top: 0px;
+    width: 100px;
+    height: 100%;
+}
+
+button {
+    margin-top: 5px;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    /* Normally 16px but this is so small*/
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: rgba(87, 85, 85, 255);
+    color: white;
+}
+
+.myPageDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-style: dashed;
+    border-color: blue;
+    border-width: 3px;
+}
+
+.wTMW {
+    margin-top: 40px;
+    padding: 5px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.aboutMe {
+    height: 300px;
+    margin: 0 50px;
+    background-color: rgba(236, 176, 176);
+    box-shadow: 0px 3px 8px #888888;
+    transition: all 300ms ease-in-out;
+}
+
+.aboutMe:hover {
+    box-shadow: 0px 5px 20px #888888;
+    ;
+}
+
+.aboutMe h1 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutMe p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.bosluk {
+    height: 10px;
+}
+
+.education {
+    margin: 0 50px;
+    height: 250px;
+    background-color: rgba(182, 237, 174);
+}
+
+.education h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.education p {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+.experience {
+    margin: 0 50px;
+    height: 200px;
+    background-color: rgba(224, 228, 87);
+}
+
+.experience h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.experience p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+.skills {
+    margin: 0 50px;
+    height: 300px;
+    background-color: rgba(167, 146, 202);
+}
+
+.skills h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hobAndInt {
+    margin: 0 50px;
+    margin-bottom: 10px;
+    height: 200px;
+    background-color: rgba(184, 131, 129);
+}
+
+.hobAndInt h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hobAndInt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+.skillsImg {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 70px;
+    margin-bottom: 3px;
+    z-index: 2;
+}
+
+.skillsImg img {
+    margin-bottom: 3px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.communicateDiv {
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height:fit-content;
+    background-color: #f1f1f1;
+    border: 3px solid rgba(12, 141, 111, 255);
+    border-radius: 25px;
+
+}
+
+.quickID {
+    width: 98%;
+    margin-top: 2px;
+    margin-left: 3px;
+    height: 260px;
+    background-color: rgb(0, 71, 150);
+    border-radius: 20px;
+}
+
+.quickID h1 {
+    font-family: myFont;
+    font-size: 16pt;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.quickID p {
+    font-family: myFont;
+    font-size: 16pt;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.quickID hr {
+    width: 99%;
+    text-align: left;
+    margin-left: 1;
+    border: 0;
+    border-top: 2px solid #f00;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+.quickID pre {
+    font-size: 17px;
+    /* Sir you want to 14pt but its is so big*/
+    margin: 0 10px;
+    font-family: myFont2;
+    color: #f1f1f1;
+}
+
+a:link,
+a:visited {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+    color: #f1f1f1;
+}
+
+.contactMe {
+
+    width: 98%;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    height: 330px;
+    background-color: rgb(173, 216, 230);
+    border-radius: 20px;
+}
+
+.contactMe h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    color: black;
+}
+
+.contactMe hr {
+    width: 99%;
+    text-align: left;
+    margin-left: 1;
+    border: 0;
+    border-top: 2px solid #f00;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+.FED_LTT {
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    height: 120px;
+}
+
+.FED {
+    margin-left: 7px;
+    width: 65%;
+    height: 120px;
+}
+
+.FED span {
+    font-size: 11pt;
+    /* Sir you want to 12pt but its is so big*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.LTT {
+    width: 35%;
+    height: 120px;
+}
+
+.LTT span {
+    font-size: 11pt;
+    /* Sir you want to 12pt but its is so big*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.SubMes {
+    margin-left: 7px;
+    width: 99%;
+    height: 100px;
+}
+
+.SubMes span {
+    font-size: 11pt;
+    /* Sir you want to 12pt but its is so big*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    width: 96%;
+    height: 30px;
+}
+
+.submitButton {
+    margin-top: 10px;
+    margin-left: 38%;
+    font-size: 15px;
+    width: 70px;
+    height: 25px;
+}
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.lUpdate {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.copyr2023 {
+    margin: 0;
+    padding: 0;
+}
+.messageToUser{
+    height:fit-content;
+    display: flex;
+    margin-bottom: 7px;
+}
+.messageToUser pre {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.freeMessage {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.linkMessage {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.clickHere:link,
+.clickHere:visited {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.clickHere:link:active,
+.clickHere:visited:active {
+    color: blue;
+}
+
+li {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
