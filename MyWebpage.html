@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="header">
+            <img class="engFlag" src="images/Eng.png" title="English">
+            <div class="vSep"></div>
+            <img class="turFlag" src="images/Tur.png" title="Turkish">
+            <p class="nameHeader">Bahadir Sina Terzioglu</p>
+            <p class="nameTitle">Computer Engineering Student at FSMVU</p>
+            <img class="head_rightside" src="images/header_rightside.jpg" title="English">
+        </div>
+        <img class="profilPhoto" src="images/res1.jpg">
+        <div class="secondDiv">
+            <div class="navDiv">
+                <div class="navigationDiv">
+                    <div class="navMenu1">
+                        <img src="images/facebook.png">
+                        <img src="images/insta.png">
+                        <img src="images/twiter.png">
+                        <img src="images/in.png">
+                        <img src="images/g.png">
+                        <img src="images/youtube.png">
+                    </div>
+                    <div class="navMenu2">
+                        <form>
+                            <button formaction="https://www.facebook.com/" type="submit">Facebook</button>
+                            <button formaction="https://www.instagram.com/" type="submit">Instagram</button>
+                            <button formaction="https://twitter.com/" type="submit">Twitter</button>
+                            <button formaction="https://www.linkedin.com/" type="submit">Linkedin</button>
+                            <button formaction="http://plus.google.com/" type="submit">Google+</button>
+                            <button formaction="https://www.youtube.com/" type="submit">YouTube</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="myPageDiv">
+                <div class="wTMW">
+                    Welcome to My Webpage
+                </div>
+                <div class="aboutMe">
+                    <h1>ABOUT ME</h1>
+                    <p>
+                        I am a 4rd year Computer Engineering student. As a disciplined and determined person, I would be responsible for developing, designing, testing and implementing
+                        various computer based software and hardware, which includes certain components found inside the
+                        computer equipment.
+                        Furthermore, I can improve myself and gain experience.
+                        I am experienced in C, C#, Java, Python, HTML / CSS / Javascript and SQL Server languages.
+                        I have knowledge about operating systems, microprocessor and microcontroller.
+                        I am currently working on socket programming and assembly language.Computer engineers are in heavy demand all through the business
+                        sectors in the world.
+                    </p>
+                </div>
+                <div class="bosluk"></div>
+                <div class="education">
+                    <h1>EDUCATION</h1>
+                    <p> 1.Mecidiyeköy Anatolian High School (Student)</p>
+                    <p> 2.Fatih Sultan Mehmet English Prep School (Student)</p>
+                    <p> 3.Fatih Sultan Mehmet University Computer Engineering (Bachelor)</p>
+                </div>
+                <div class="experience">
+                    <h1>EXPERIENCE</h1>
+                    <p> • Information Technologies Infrastructure Middleware Intern at Halkbank</p>
+                </div>
+                <div class="skills">
+                    <h1>SKILLS</h1>
+                    <div class="skillsImg">
+                        <img src="images/skills1.jpg">
+                        <img src="images/skills2.jpg">
+                        <img src="images/skills3.jpg">
+                        <img src="images/skills4.jpg">
+                        <img src="images/skills5.png">
+                        <img src="images/skills6.png">
+                        <img src="images/skills7.png">
+                    </div>
+                </div>
+                <div class="hobAndInt">
+                    <h1>HOBBIES AND INTERESTS</h1>
+                    <p> • Play a games</p>
+                    <p> • Watch a movies and series</p>
+                    <p> • Sports</p>
+                </div>
+            </div>
+            <div class="communicateDiv">
+                <div class="quickID">
+                    <h1>QUICK ID</h1>
+                    <hr>
+                    <pre> Phone     123-456-7890</pre>
+                    <br />
+                    <pre> Email     <a href="mailto:bahadir.terzioglu@stu.fsm.edu.tr">bahadir.terzioglu@stu.fsm.edu.tr</a></pre>
+                    <br />
+                    <pre> Website   <a href="https://www.fsm.edu.tr/">www.fsm.edu.tr</a></pre>
+                    </pre>
+                    <br />
+                    <pre> Address   Sütlüce Mah. Halicioğlu Kavşaği </pre>
+                    <pre>                    No:12     Beyoğlu / İstanbul</pre>
+                </div>
+                <hr style="width:99%;text-align:left;margin-left:1">
+                <div class="messageToUser" style="display: none;">
+                    <pre>Thank You...</pre>
+                    <pre>Your message has been sent!</pre> <br>
+                    <div class="freeMessage"></div>
+                    <ul class="dateList"></ul>
+                    <p class="linkMessage">To send another message, <a class="clickHere" href="javascript:changing()"
+                            id="fo">click here</a></p>
+                </div>
+                <div class="contactMe">
+                    <h1>CONTACT ME</h1>
+                    <hr>
+                    <div class="FED_LTT">
+                        <div class="FED">
+                            <span>First Name *</span><br>
+                            <input type="text" id="fname" name="fname" size="15"><br>
+                            <span>Email *</span><br>
+                            <input type="text" id="emailN" name="emailN"><br>
+                            <span>Date</span><br>
+                            <input id="dateN" type="date" />
+                        </div>
+                        <div class="LTT">
+                            <span>Last Name *</span><br>
+                            <input type="text" id="lname" name="lname" size="9"><br>
+                            <span>Tel</span><br>
+                            <input type="text" id="telN" name="telN" size="9"><br>
+                            <span>Time</span> <br>
+                            <input type="time" id="appt" name="appt" />
+                        </div>
+                    </div>
+                    <div class="SubMes">
+                        <span>Subject *</span> <br>
+                        <input type="text" id="subjectN" name="subjectN" size="35"> <br>
+                        <span>Message *</label> <br>
+                            <textarea id="messagjeN" name="messagjeN" rows="4" cols="50"></textarea><br>
+                            <input class="submitButton" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="lUpdate">Last Update: 15/11/2023 - 21:00 GMT</p>
+            <p class="copyr2023">Copyright @ 2023</p>
+        </div>
+    </div>
+</body>
+
+</html>
